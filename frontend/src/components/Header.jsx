@@ -20,7 +20,6 @@ const Header = () => {
     try {
       await logoutApiCall().unwrap();
       dispatch(logout());
-
       navigate('/login');
       toast.success('Logout successful');
     } catch (error) {
@@ -38,7 +37,7 @@ const Header = () => {
     >
       <Container>
         <LinkContainer to='/'>
-          <Navbar.Brand>MERN Shop</Navbar.Brand>
+          <Navbar.Brand>Desi Kart</Navbar.Brand>
         </LinkContainer>
         <Navbar.Toggle aria-controls='basic-navbar-nav' />
         <Navbar.Collapse id='basic-navbar-nav'>

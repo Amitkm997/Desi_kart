@@ -20,10 +20,10 @@ const getProducts = async (req, res, next) => {
       .limit(limit > maxLimit ? maxLimit : limit)
       .skip(skip > maxSkip ? maxSkip : skip < 0 ? 0 : skip);
 
-    if (!products || products.length === 0) {
-      res.statusCode = 404;
-      throw new Error('Products not found!');
-    }
+    // if (!products || products.length === 0) {
+    //   res.statusCode = 404;
+    //   throw new Error('Products not found!');
+    // }
 
     res.status(200).json({
       products,
