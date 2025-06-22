@@ -3,6 +3,7 @@ import { configureStore } from '@reduxjs/toolkit';
 import { apiSlice } from './slices/apiSlice';
 import cartSliceReducer from './slices/cartSlice';
 import authSliceReducer from './slices/authSlice';
+import sellerAuthSliceReducer from './slices/sellerAuthSlice';
 import searchProductSliceReducer from './slices/searchProductSlice';
 
 // Configure the Redux store
@@ -12,6 +13,7 @@ const store = configureStore({
     [apiSlice.reducerPath]: apiSlice.reducer, // API-related state reducer
     cart: cartSliceReducer, // Shopping cart state reducer
     auth: authSliceReducer, // Authentication state reducer
+    sellerAuth: sellerAuthSliceReducer, // Seller authentication state reducer
     search: searchProductSliceReducer
   },
 

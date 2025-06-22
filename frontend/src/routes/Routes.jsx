@@ -6,6 +6,9 @@ import HomePage from '../pages/HomePage';
 import CartPage from '../pages/CartPage';
 import LoginPage from '../pages/LoginPage';
 import RegisterPage from '../pages/RegisterPage';
+import SellerLoginPage from '../pages/SellerLoginPage';
+import SellerRegisterPage from '../pages/SellerRegisterPage';
+import SellerDashboard from '../pages/SellerDashboard';
 import ShippingPage from '../pages/ShippingPage';
 import PrivateRoute from '../components/PrivateRoute';
 import PaymentPage from '../pages/PaymentPage';
@@ -62,6 +65,18 @@ const router = createBrowserRouter([
       {
         path: '/register',
         element: <RegisterPage />
+      },
+      {
+        path: '/seller/login',
+        element: <SellerLoginPage />
+      },
+      {
+        path: '/seller/register',
+        element: <SellerRegisterPage />
+      },
+      {
+        path: '/seller/dashboard',
+        element: <SellerDashboard />
       },
       {
         path: '',

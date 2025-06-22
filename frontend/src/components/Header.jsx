@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Navbar, Nav, Container, Badge, NavDropdown } from 'react-bootstrap';
-import { FaShoppingCart, FaUser } from 'react-icons/fa';
+import { FaShoppingCart, FaUser, FaStore } from 'react-icons/fa';
 import { LinkContainer } from 'react-router-bootstrap';
 import { useSelector, useDispatch } from 'react-redux';
 import { useLogoutMutation } from '../slices/usersApiSlice';
@@ -71,12 +71,20 @@ const Header = () => {
                 </NavDropdown.Item>
               </NavDropdown>
             ) : (
-              <LinkContainer to='/login'>
-                <Nav.Link>
-                  <FaUser style={{ marginRight: '5px' }} />
-                  Sign In
-                </Nav.Link>
-              </LinkContainer>
+              <>
+                <LinkContainer to='/login'>
+                  <Nav.Link>
+                    <FaUser style={{ marginRight: '5px' }} />
+                    Sign In
+                  </Nav.Link>
+                </LinkContainer>
+                <LinkContainer to='/seller/register'>
+                  <Nav.Link>
+                    <FaStore style={{ marginRight: '5px' }} />
+                    Become a Seller
+                  </Nav.Link>
+                </LinkContainer>
+              </>
             )}
             {/* {userInfo && userInfo.isAdmin && (
                 <NavDropdown title='Admin' id='adminmenu'>

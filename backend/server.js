@@ -7,6 +7,7 @@ import 'dotenv/config';
 
 import productRoutes from './routes/productRoutes.js';
 import userRoutes from './routes/userRoutes.js';
+import sellerRoutes from './routes/sellerRoutes.js';
 import orderRoutes from './routes/orderRoutes.js';
 import uploadRoutes from './routes/uploadRoutes.js';
 import paymentRoutes from './routes/paymentRoutes.js';
@@ -32,6 +33,7 @@ app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
 app.use('/api/v1/products', productRoutes);
 app.use('/api/v1/users', userRoutes);
+app.use('/api/v1/sellers', sellerRoutes);
 app.use('/api/v1/orders', orderRoutes);
 app.use('/api/v1/upload', uploadRoutes);
 app.use('/api/v1/payment', paymentRoutes);
