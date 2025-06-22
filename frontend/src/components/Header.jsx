@@ -78,16 +78,16 @@ const Header = () => {
                     Sign In
                   </Nav.Link>
                 </LinkContainer>
-                <LinkContainer to='/seller/register'>
+                {/* <LinkContainer to='/seller/register'>
                   <Nav.Link>
                     <FaStore style={{ marginRight: '5px' }} />
                     Become a Seller
                   </Nav.Link>
-                </LinkContainer>
+                </LinkContainer> */}
               </>
             )}
-            {/* {userInfo && userInfo.isAdmin && (
-                <NavDropdown title='Admin' id='adminmenu'>
+            {userInfo && userInfo.isAdmin && (
+                <NavDropdown title='Become seller' id='adminmenu'>
                   <LinkContainer to='/admin/product-list'>
                     <NavDropdown.Item>Products</NavDropdown.Item>
                   </LinkContainer>
@@ -98,7 +98,7 @@ const Header = () => {
                     <NavDropdown.Item>Users</NavDropdown.Item>
                   </LinkContainer>
                 </NavDropdown>
-              )} */}
+              )} 
           </Nav>
         </Navbar.Collapse>
       </Container>
