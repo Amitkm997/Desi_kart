@@ -6,7 +6,7 @@ const products = [
       'Handcrafted traditional clay pot made from 100% natural terracotta. Ideal for slow cooking Indian curries, rice, and stews, this eco-friendly pot enhances flavor and retains nutrients. Comes with a perfectly fitting lid to lock in moisture and aroma. Suitable for gas stoves and traditional wood-fired cooking.',
     brand: 'VillageCraft',
     category: 'Kitchenware',
-    price: 499,
+    price: 150,
     countInStock: 15,
     rating: 4.7,
     numReviews: 86
